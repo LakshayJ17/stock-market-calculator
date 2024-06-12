@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIP Calculator</title>
+    <link rel="stylesheet" href="sip.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>SIP Calculator</h1>
+            <input type="checkbox" id="darkmode-toggle">
+            <label for="darkmode-toggle">
+                <i class="sun fa-regular fa-sun"></i>
+                <i class="moon fa-solid fa-moon"></i>
+            </label>
+        </div>
+
+        <div class="choice">
+            <div id="sip-opt" class="options">SIP</div>
+            <div id="lumpsum-opt" class="options">LUMPSUM</div>
+        </div>
+
+        <form id="sip-form">
+            <label for="monthly-investment">Monthly Investment Amount:</label>
+            <input type="number" id="monthly-investment" required>
+
+            <label for="annual-rate">Annual Rate of Return (%):</label>
+            <input type="number" id="annual-rate" step="0.01" required>
+
+            <label for="investment-period">Investment Period (Years):</label>
+            <input type="number" id="investment-period" required>
+
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="result">
+            <h2>Future Value: <span id="future-value"></span></h2>
+        </div>
+        <a href="index.html"><button>Back to Home Screen</button></a>
+    </div>
+
+    <script src="sip.js"></script>
+    <script src="https://kit.fontawesome.com/a8676eedf4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
