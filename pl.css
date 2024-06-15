@@ -1,0 +1,128 @@
+:root {
+    --blue: linear-gradient(45deg, #007BFF, #0056b3);
+    --black: linear-gradient(to right, #333333, #000000);
+    --transition: 0.3s ease;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background-color var(--transition), color var(--transition);
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color var(--transition), box-shadow var(--transition);
+}
+
+.header {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.header h1 {
+    margin-bottom: 10px;
+}
+
+.header h4 {
+    text-align: left;
+    color: #007bff;
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    transition: background-color var(--transition), border-color var(--transition);
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #007bff;
+    background-color: #ffffff;
+}
+
+button {
+    padding: 10px 20px;
+    background: var(--blue);
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color var(--transition), transform var(--transition);
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+a button {
+    margin-top: 10px;
+}
+
+.warning {
+    color: red;
+    font-size: 0.875em;
+    display: none;
+    margin-bottom: 7px;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .container {
+    background-color: #1c1c1c;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .header h4 {
+    color: #bb86fc;
+}
+
+body.dark-mode input[type="number"] {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    border: 1px solid #444;
+}
+
+body.dark-mode input[type="number"]:focus {
+    outline: none;
+    border-color: #bb86fc;
+    background-color: #333;
+}
+
+body.dark-mode button {
+    color: #e0e0e0;
+    background: #1c1c1c;
+    border: 1px solid #bb86fc;
+}
+
+body.dark-mode button:hover {
+    background-color: #383838;
+    color: #ffffff;
+}
