@@ -39,6 +39,7 @@ function scrollToElement(selector) {
         const y = element.getBoundingClientRect().top + yOffset;
         window.scrollTo({ top: y, behavior: 'smooth' });
     }
+    
 }
 
 
