@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROI Calculator</title>
+    <link rel="stylesheet" href="roi.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>ROI Calculator - Return on Investment Calculator</h1>
+        </div>
+        <div class="input-section">
+            <label for="invested">Amount Invested</label>
+            <input type="number" id="invested" required>
+            <span class="warning" id="invested-warning"></span>
+
+            <label for="return">Amount Returned</label>
+            <input type="number" id="return" required>
+            <span class="warning" id="return-warning"></span>
+
+            <label for="time">Investment Period (in years)</label>
+            <input type="number" id="time" required>
+            <span class="warning" id="time-warning"></span>
+
+            <button type="submit">Calculate</button>
+        </div>
+        <div id="result">
+            <h2>Total Gain on Investment : <span id="gain-value"></span></h2>
+            <h2>Return On Investment (ROI) : <span id="roi-value"></span></h2>
+            <h2>Simple Annual (ROI) : <span id="annual-value"></span></h2>
+        </div>
+
+        <a href="index.html"><button>Back to Home Screen</button></a>
+    </div>
+    <script src="roi.js"></script>
+</body>
+
+</html>
