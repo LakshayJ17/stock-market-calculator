@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Average Calculator</title>
+    <link rel="stylesheet" href="avg.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Stock Average Calculator</h1>
+        </div>
+
+        <form id="input-section">
+            <div id="first-buy">
+                <h2>First Purchase</h3>
+                <label for="first-buy-price">Price per share</label>
+                <input type="number"  id="first-buy-price" step="0.01" required>
+                <span class="warning" id="first-price-warning"></span>
+
+                <label for="first-buy-qty">Units</label>
+                <input type="number"  id="first-buy-qty" required>
+                <span class="warning" id="first-qty-warning"></span>
+            </div>
+
+            <div id="second-buy">
+                <h2>Second Purchase</h3>
+                <label for="second-buy-price">Price per share</label>
+                <input type="number" id="second-buy-price" step="0.01" required>
+                <span class="warning" id="second-price-warning"></span>
+
+                <label for="second-buy-qty">Units</label>
+                <input type="number" id="second-buy-qty" required>
+                <span class="warning" id="second-qty-warning"></span>
+            </div>
+
+            <button type="submit">Calculate</button>
+        </form>
+
+        <div id="result">
+            <h3>Average Price : <span id="averagePrice"></span></h3>
+            <h3>Total Units : <span id="totalQty"></span></h3>
+            <h3>Total Investment Value : <span id="totalInv"></span></h3>
+        </div>
+
+        <a href="index.html"><button>Back to Home Screen</button></a>
+
+    </div>
+    <script src="avg.js"></script>
+</body>
+
+</html>
