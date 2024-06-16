@@ -2,15 +2,6 @@
 
 Market Math is a web application that offers a collection of stock market calculators to assist investors in making informed financial decisions.
 
-## Features
-
-- **SIP Calculator**: Calculate the future value of Systematic Investment Plans.
-- **P&L Calculator**: Determine profit and loss from stock market trades.
-- **ROI Calculator**: Compute return on investment for financial decisions.
-- **Stock Average Calculator**: Average the cost of stock purchases for better insights.
-- **Percentage Calculator**: Calculate the proportion of stock in a portfolio's value.
-- **Capital Gains Calculator**: Estimate taxes on capital gains from investments.
-
 ## Table of Contents
 
 - [Installation](#installation)
@@ -21,30 +12,7 @@ Market Math is a web application that offers a collection of stock market calcul
 
 ## Installation
 
-To use Market Math, simply visit the stockmarket-calculators.netlify.app(# Market Math - Stock Market Calculator Hub)
-
-Market Math is a web application that offers a collection of stock market calculators to assist investors in making informed financial decisions.
-
-## Features
-
-- **SIP Calculator**: Calculate the future value of Systematic Investment Plans.
-- **P&L Calculator**: Determine profit and loss from stock market trades.
-- **ROI Calculator**: Compute return on investment for financial decisions.
-- **Stock Average Calculator**: Average the cost of stock purchases for better insights.
-- **Percentage Calculator**: Calculate the proportion of stock in a portfolio's value.
-- **Capital Gains Calculator**: Estimate taxes on capital gains from investments.
-
-## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-
-## Installation
-
-To use Market Math, simply visit the stockmarket-calculators.netlify.app in your web browser.
+To use Market Math, simply visit the [Market Math](stockmarket-calculators.netlify.app) in your web browser.
 
 If you prefer to host it locally:
 
@@ -52,7 +20,6 @@ If you prefer to host it locally:
 
    ```bash
    git clone https://github.com/LakshayJ17/stock-market-calculator.git
-) in your web browser.
 
 2. Open index.html in your preferred browser.
 
