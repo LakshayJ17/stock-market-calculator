@@ -21,8 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    const calculateButton = document.querySelector('button[type="submit"]');
-    calculateButton.addEventListener('click', (e) => {
+    const roiForm = document.getElementById('roi-form');
+
+    roiForm.addEventListener('submit', function (e) {
         e.preventDefault();
 
         const investedAmount = parseFloat(document.getElementById('invested').value);
@@ -31,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let valid = true;
 
-        if (isNaN(investedAmount) || investedAmount <= 0) {
+        if (investedAmount <= 0) {
             document.getElementById('invested-warning').innerText = 'Please enter a value greater than 0';
             document.getElementById('invested-warning').style.display = 'block';
             valid = false;
@@ -39,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('invested-warning').style.display = 'none';
         }
 
-        if (isNaN(returnAmount) || returnAmount <= 0) {
+        if (returnAmount <= 0) {
             document.getElementById('return-warning').innerText = 'Please enter a value greater than 0';
             document.getElementById('return-warning').style.display = 'block';
             valid = false;
@@ -47,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('return-warning').style.display = 'none';
         }
 
-        if (isNaN(time) || time <= 0) {
+        if (time <= 0) {
             document.getElementById('time-warning').innerText = 'Please enter a value greater than 0';
             document.getElementById('time-warning').style.display = 'block';
             valid = false;
