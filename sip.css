@@ -54,6 +54,9 @@ body {
     animation: pulse 1s 1;
 }
 
+#sip-form{
+    margin-bottom: 10px;
+}
 label {
     display: block;
     margin-bottom: 8px;
