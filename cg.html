@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capital Gains Tax Calculator</title>
+    <link rel="stylesheet" href="cg.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Capital Gains Tax Calculator</h1>
+        </div>
+        <form id="cg-form">
+            <label for="purchasePrice">Purchase Price (₹)</label>
+            <input type="number" id="purchasePrice" required>
+            <span class="warning" id="purchase-price-warning"></span>
+
+            <label for="salePrice">Sale Price (₹)</label>
+            <input type="number" id="salePrice" required>
+            <span class="warning" id="sale-price-warning"></span>
+
+            <label for="holdingPeriod">Holding Period (years)</label>
+            <input type="number" id="holdingPeriod" step="0.1" required>
+            <span class="warning" id="holding-period-warning"></span>
+
+            <label for="totalIncome">Total Annual Income (₹)</label>
+            <input type="number" id="totalIncome" required>
+            <span class="warning" id="total-income-warning"></span>
+
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="result">
+            <h3>Results</h3>
+            <p id="resultText"></p>
+        </div>
+        <a href="index.html"><button>Back to Home Screen</button></a>
+    </div>
+    <script src="cg.js"></script>
+</body>
+
+</html>
