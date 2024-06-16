@@ -7,7 +7,6 @@ Market Math is a web application that offers a collection of stock market calcul
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ## Installation
