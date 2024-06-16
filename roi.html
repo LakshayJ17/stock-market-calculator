@@ -13,13 +13,13 @@
         <div class="header">
             <h1>ROI Calculator - Return on Investment Calculator</h1>
         </div>
-        <div class="input-section">
-            <label for="invested">Amount Invested</label>
-            <input type="number" id="invested" required>
+        <form id="roi-form">
+            <label for="invested">Amount Invested (₹)</label>
+            <input type="number" id="invested" step="0.01" required>
             <span class="warning" id="invested-warning"></span>
 
-            <label for="return">Amount Returned</label>
-            <input type="number" id="return" required>
+            <label for="return">Amount Returned (₹)</label>
+            <input type="number" id="return" step="0.01" required>
             <span class="warning" id="return-warning"></span>
 
             <label for="time">Investment Period (in years)</label>
@@ -27,11 +27,12 @@
             <span class="warning" id="time-warning"></span>
 
             <button type="submit">Calculate</button>
-        </div>
+        </form>
+
         <div id="result">
-            <h2>Total Gain on Investment : <span id="gain-value"></span></h2>
-            <h2>Return On Investment (ROI) : <span id="roi-value"></span></h2>
-            <h2>Simple Annual (ROI) : <span id="annual-value"></span></h2>
+            <h3>Total Gain on Investment : <span id="gain-value"></span></h3>
+            <h3>Return On Investment (ROI) : <span id="roi-value"></span></h3>
+            <h3>Simple Annual (ROI) : <span id="annual-value"></span></h3>
         </div>
 
         <a href="index.html"><button>Back to Home Screen</button></a>
