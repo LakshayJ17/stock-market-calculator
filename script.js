@@ -35,12 +35,12 @@ document.addEventListener('DOMContentLoaded', () => {
 function scrollToElement(selector) {
     const element = document.querySelector(selector);
     if (element) {
-        const yOffset = 130;
-        const y = element.getBoundingClientRect().top + yOffset;
+        const yOffset = 100; 
+        const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
         window.scrollTo({ top: y, behavior: 'smooth' });
     }
-    
 }
+
 
 
 
