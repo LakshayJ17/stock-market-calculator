@@ -33,8 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         sipOpt.classList.add('selected');
         lumpsumOpt.classList.remove('selected');
         futureValueDisplay.textContent = '';
-
-    })
+    });
 
     lumpsumOpt.addEventListener('click', () => {
         sipForm.style.display = 'none';
@@ -42,10 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         sipOpt.classList.remove('selected');
         lumpsumOpt.classList.add('selected');
         futureValueDisplay.textContent = '';
-
     });
-
-
 
     sipForm.addEventListener('submit', function (e) {
         e.preventDefault();
@@ -88,7 +84,6 @@ document.addEventListener('DOMContentLoaded', () => {
             // Display result
             futureValueDisplay.textContent = '₹ ' + futureValue;
         }
-
     });
 
     lumpsumForm.addEventListener('submit', function (e) {
@@ -108,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('lumpsum-amount-warning').style.display = 'none';
         }
 
-        if (isNaN(annualRate) || annualRate <= 0) {
+        if (isNaN(annualRateLumpsum) || annualRateLumpsum <= 0) {
             document.getElementById('annual-rate-lumpsum-warning').style.display = 'block';
             document.getElementById('annual-rate-lumpsum-warning').innerText = 'Please enter a value greater than 0';
             valid = false;
@@ -116,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('annual-rate-lumpsum-warning').style.display = 'none';
         }
 
-        if (isNaN(investmentPeriod) || investmentPeriod <= 0) {
+        if (isNaN(investmentPeriodLumpsum) || investmentPeriodLumpsum <= 0) {
             document.getElementById('investment-period-lumpsum-warning').style.display = 'block';
             document.getElementById('investment-period-lumpsum-warning').innerText = 'Please enter a value greater than 0';
             valid = false;
@@ -128,7 +123,6 @@ document.addEventListener('DOMContentLoaded', () => {
             let futureValue = calculateFutureValueLumpsum(lumpsumAmount, annualRateLumpsum, investmentPeriodLumpsum);
             futureValueDisplay.textContent = '₹ ' + futureValue;
         }
-
     });
 
     function calculateFutureValueSIP(monthlyInvestment, annualRate, investmentPeriod) {
