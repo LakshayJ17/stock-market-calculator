@@ -21,7 +21,7 @@
 
 
         <form id="sip-form">
-            <label for="monthly-investment">Monthly Investment Amount</label>
+            <label for="monthly-investment">Monthly Investment Amount (₹)</label>
             <input type="number" id="monthly-investment" required>
             <span class="warning" id="monthly-investment-warning"></span>
 
@@ -37,7 +37,7 @@
         </form>
 
         <form id="lumpsum-form" style="display: none;">
-            <label for="lumpsum-amount">Lumpsum Amount</label>
+            <label for="lumpsum-amount">Lumpsum Amount (₹)</label>
             <input type="number" id="lumpsum-amount" required>
             <span class="warning" id="lumpsum-amount-warning"></span>
 
@@ -53,14 +53,13 @@
         </form>
 
         <div id="result">
-            <h2>Future Value : <span id="future-value"></span></h2>
+            <h3>Future Value : <span id="future-value"></span></h3>
         </div>
 
         <a href="index.html"><button>Back to Home Screen</button></a>
     </div>
 
     <script src="sip.js"></script>
-    <script src="https://kit.fontawesome.com/a8676eedf4.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
