@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    const avgForm = document.getElementById('input-section');
+    const avgForm = document.getElementById('avg-form');
 
     avgForm.addEventListener('submit', function (e) {
         e.preventDefault();
