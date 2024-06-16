@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage Calculator</title>
+    <link rel="stylesheet" href="per.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Percentage Calculator</h1>
+        </div>
+        <form id="per-form">
+
+            <label for="totalValue">Total Value of Portfolio (₹)</label>
+            <input type="number" id="totalValue" step="0.01" required>
+            <span class="warning" id="total-warning"></span>
+
+            <label for="stockPrice">Price per Share (₹)</label>
+            <input type="number" id="stockPrice" step="0.01" required>
+            <span class="warning" id="price-warning"></span>
+
+            <label for="stockUnits">Units</label>
+            <input type="number" id="stockUnits" required>
+            <span class="warning" id="unit-warning"></span>
+
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="result">
+            <h3>Percentage of stock to total value of portfolio : <span id="per-value"></span></h3>
+        </div>
+        <a href="index.html"><button>Back to Home Screen</button></a>
+    </div>
+    <script src="per.js"></script>
+</body>
+
+</html>
