@@ -20,24 +20,24 @@
       <h4>DP Charges</Canvas> : Rs 13.5/- </h4>
     </div>
 
-    <div class="input-section">
+    <form id ="pl-form">
       <label for="qty">Quantity</label>
       <input type="number" id="qty" required>
       <span class="warning" id="qty-warning"></span>
 
-      <label for="buyPrice">Buy price per share</label>
-      <input type="number" id="buyPrice" required>
+      <label for="buyPrice">Buy price per share (₹)</label>
+      <input type="number" id="buyPrice" step="0.01" required>
       <span class="warning" id="buy-warning"></span>
 
-      <label for="sellingPrice">Sell price per share</label>
-      <input type="number" id="sellingPrice" required>
+      <label for="sellingPrice">Sell price per share (₹)</label>
+      <input type="number" id="sellingPrice" step="0.01" required>
       <span class="warning" id="sell-warning"></span>
 
       <button type="submit">Calculate</button>
-    </div>
+    </form>
 
     <div id="tax">
-      <h2>Total Charges : <span id="tax-value"></span></h2>
+      <h3>Total Charges : <span id="tax-value"></span></h3>
     </div>
     <div id="result"></div>
     <a href="index.html"><button>Back to Home Screen</button></a>
