@@ -19,8 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    const calculateButton = document.querySelector('button[type="submit"]');
-    calculateButton.addEventListener('click', (e) => {
+    const plForm = document.getElementById('pl-form');
+
+    plForm.addEventListener('submit', function(e) {
         e.preventDefault();
         let quantity = parseFloat(document.getElementById('qty').value);
         let buyPrice = parseFloat(document.getElementById('buyPrice').value);
@@ -31,15 +32,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let valid = true;
 
-        if (isNaN(quantity) || quantity <= 0) {
+        if (quantity <= 0) {
             document.getElementById('qty-warning').innerText = 'Please enter a value greater than 0';
             document.getElementById('qty-warning').style.display = 'block';
             valid = false;
-        } else {
+        }else {
             document.getElementById('qty-warning').style.display = 'none';
         }
 
-        if (isNaN(buyPrice) || buyPrice <= 0) {
+        if (buyPrice <= 0) {
             document.getElementById('buy-warning').innerText = 'Please enter a value greater than 0';
             document.getElementById('buy-warning').style.display = 'block';
             valid = false;
@@ -47,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('buy-warning').style.display = 'none';
         }
 
-        if (isNaN(sellPrice) || sellPrice <= 0) {
+        if (sellPrice <= 0) {
             document.getElementById('sell-warning').innerText = 'Please enter a value greater than 0';
             document.getElementById('sell-warning').style.display = 'block';
             valid = false;
@@ -78,11 +79,11 @@ document.addEventListener('DOMContentLoaded', () => {
             let profitOrLoss = calculateProfitOrLoss(totalTax);
             document.getElementById('tax-value').textContent = '₹ ' + totalTax.toFixed(2);
             if (profitOrLoss >= 0) {
-                document.getElementById('result').innerHTML = `<h2>Profit : ₹ ${profitOrLoss.toFixed(2)}</h2>`;
+                document.getElementById('result').innerHTML = `<h3>Profit : ₹ ${profitOrLoss.toFixed(2)}</h3>`;
             }
             else {
                 let absoluteLoss = Math.abs(profitOrLoss);
-                document.getElementById('result').innerHTML = `<h2>Loss : ₹ ${absoluteLoss.toFixed(2)}</h2>`;
+                document.getElementById('result').innerHTML = `<h3>Loss : ₹ ${absoluteLoss.toFixed(2)}</h3>`;
             }
 
             scrollToElement('#result');
@@ -94,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const element = document.querySelector(selector);
         if (element) {
             const yOffset = 150;
-            const y = element.getBoundingClientRect().top + window.pageYOffset - yOffset;
+            const y = element.getBoundingClientRect().top + yOffset;
             window.scrollTo({ top: y, behavior: 'smooth' });
         }
     }
