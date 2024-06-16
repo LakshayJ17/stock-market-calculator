@@ -14,10 +14,10 @@
             <h1>Stock Average Calculator</h1>
         </div>
 
-        <form id="input-section">
+        <form id="avg-form">
             <div id="first-buy">
                 <h2>First Purchase</h3>
-                <label for="first-buy-price">Price per share</label>
+                <label for="first-buy-price">Price per share (₹)</label>
                 <input type="number"  id="first-buy-price" step="0.01" required>
                 <span class="warning" id="first-price-warning"></span>
 
@@ -28,14 +28,14 @@
 
             <div id="second-buy">
                 <h2>Second Purchase</h3>
-                <label for="second-buy-price">Price per share</label>
+                <label for="second-buy-price">Price per share (₹)</label>
                 <input type="number" id="second-buy-price" step="0.01" required>
                 <span class="warning" id="second-price-warning"></span>
 
                 <label for="second-buy-qty">Units</label>
                 <input type="number" id="second-buy-qty" required>
                 <span class="warning" id="second-qty-warning"></span>
-            </div>
+            </div> 
 
             <button type="submit">Calculate</button>
         </form>
