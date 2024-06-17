@@ -22,12 +22,16 @@ If you prefer to host it locally:
 
 2. Open index.html in your preferred browser.
 
-Usage
+## Usage
+
 Navigate through the calculators using the links provided.
 Input the required data.
 Obtain accurate calculations for your financial planning needs.
-Contributing
+
+## Contributing
+
 Contributions are welcome! If you have suggestions for new features, enhancements, or find any issues, please feel free to contribute or report them.
 
-Contact
+## Contact
+
 For questions or feedback, please reach out to Lakshay Jain.
