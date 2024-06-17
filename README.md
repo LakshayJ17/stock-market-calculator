@@ -11,7 +11,7 @@ Market Math is a web application that offers a collection of stock market calcul
 
 ## Installation
 
-To use Market Math, simply visit the [Market Math](stockmarket-calculators.netlify.app) in your web browser.
+To use Market Math, simply visit the [Market Math](https://stockmarket-calculators.netlify.app) in your web browser.
 
 If you prefer to host it locally:
 
